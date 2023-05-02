@@ -1,4 +1,5 @@
 const path = require('path');
+var ghpages = require('gh-pages');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
