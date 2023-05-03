@@ -1,3 +1,5 @@
+import aboutImg from '../../../src/images/aboutImage.jpg';
+
 export default function aboutCompany() {
   const aboutContainer = document.createElement('section');
   aboutContainer.setAttribute('id', 'aboutContainer');
@@ -40,6 +42,8 @@ export default function aboutCompany() {
   textContainer.appendChild(paragraphText);
 
   const imageOfRestaurant = new Image();
+  imageOfRestaurant.src = aboutImg;
+
   imageOfRestaurant.setAttribute('class', 'imageoOfRestaurant');
   imageOfRestaurant.setAttribute('alt', 'Picture of restaurant');
 
