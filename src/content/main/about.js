@@ -44,7 +44,7 @@ export default function aboutCompany() {
   const imageOfRestaurant = new Image();
   imageOfRestaurant.src = aboutImg;
 
-  imageOfRestaurant.setAttribute('class', 'imageoOfRestaurant');
+  imageOfRestaurant.setAttribute('class', 'imageOfRestaurant');
   imageOfRestaurant.setAttribute('alt', 'Picture of restaurant');
 
   rightSideImg.appendChild(imageOfRestaurant);

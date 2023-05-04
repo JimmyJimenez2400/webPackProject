@@ -39,6 +39,7 @@ export default function navbar() {
 
   const unorderListContainer = document.createElement('ul');
   unorderListContainer.setAttribute('class', 'not-active');
+  unorderListContainer.setAttribute('class', 'nav-links');
 
   right_side.appendChild(unorderListContainer);
   unorderListContainer.appendChild(

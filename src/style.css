@@ -14,13 +14,16 @@
   --Viridian: #53917E;
   --Wenge: #63535B;
   --Claret: #6D1A36;
+  --Celestial-Blue: #39A0ED;
+  --White: #FBFFFE;
+  --Dark-Shadow: #011627;
+  --gold: #FF9F1C;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px solid blue;
 }
 
 img {
@@ -34,10 +37,24 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Lemon', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--White);
+
+  background-image: url('./images/backgroundPhoto.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #content {
-  background-color: lightcoral;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -47,14 +64,62 @@ a {
 }
 
 #headerContainer {
-  background-color: red;
+  flex: 0 1 auto;
+}
+
+#footerContainer {
+  flex: 0 1 auto;
 }
 
 #mainContainer {
-  background-color: aqua;
   flex: 2;
 }
 
-#navbarContainer {
-  background-color: purple;
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  color: var(--gold);
+  background-color: var(--Viridian);
+}
+
+.logoTitle {
+  cursor: pointer;
+  font-size: 5em;
+
+}
+
+.right-side {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links li a {
+  font-size: 1.4em;
+  padding: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+  background-color: var(--Dark-Shadow);
+  border-radius: 0.5em;
+
+}
+
+.buttonContainer {
+  display: none;
+}
+
+.imageOfRestaurant {
+  width: 200px;
 }
