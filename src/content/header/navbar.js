@@ -1,5 +1,5 @@
 //Import Image
-import liElement from '../../helpful_functions/liElementMaker';
+import liElementNavbar from '../../helpful_functions/liElementMaker';
 import hamburgerMenu from '../../helpful_functions/hamburgerMarker';
 
 export default function navbar() {
@@ -43,16 +43,16 @@ export default function navbar() {
 
   right_side.appendChild(unorderListContainer);
   unorderListContainer.appendChild(
-    liElement('HOME', 'liElement', 'userLink', '#')
+    liElementNavbar('HOME', 'liElement', 'userLink', '#')
   );
   unorderListContainer.appendChild(
-    liElement('ABOUT', 'liElement', 'userLink', '#')
+    liElementNavbar('ABOUT', 'liElement', 'userLink', '#')
   );
   unorderListContainer.appendChild(
-    liElement('MENU', 'liElement', 'userLink', '#')
+    liElementNavbar('MENU', 'liElement', 'userLink', '#')
   );
   unorderListContainer.appendChild(
-    liElement('CONTACT', 'liElement', 'userLink', '#')
+    liElementNavbar('CONTACT', 'liElement', 'userLink', '#')
   );
 
   return sectionContainer;
