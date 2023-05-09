@@ -39,6 +39,4 @@ export default function pageLoad() {
   content.appendChild(header());
   content.appendChild(mainBody());
   content.appendChild(footer());
-
-  toggleHambugerMenu();
 }
