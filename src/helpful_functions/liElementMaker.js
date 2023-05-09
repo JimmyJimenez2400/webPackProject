@@ -1,4 +1,9 @@
-export default function liElement(text, className, linkName, functionCall) {
+export default function liElementNavbar(
+  text,
+  className,
+  linkName,
+  functionCall
+) {
   const liElement = document.createElement('li');
   liElement.setAttribute('class', `${className}-1`);
 
