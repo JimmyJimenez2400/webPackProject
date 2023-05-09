@@ -198,14 +198,12 @@ body {
 .about {
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 
 .about>* {
-  flex-basis: 50%;
-}
-
-.imageOfRestaurant {
-  width: 100%;
-  border: 2px solid red;
+  flex: 1 1 560px;
 }
