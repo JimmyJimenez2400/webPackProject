@@ -108,6 +108,7 @@ body {
 .nav-links {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -188,4 +189,11 @@ body {
 .imageOfRestaurant {
   width: 200px;
   border: 2px solid red;
+}
+
+/* About */
+
+#aboutContainer {
+  display: flex;
+  flex: 1;
 }
