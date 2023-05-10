@@ -15,10 +15,7 @@ export default function contactPage() {
 
   const contactForm = document.createElement('form');
   contactForm.setAttribute('class', 'contactForm');
-  contactForm.setAttribute(
-    'action',
-    'https://formspree.io/jimmyjimenez24000@gmail.com'
-  );
+  contactForm.setAttribute('action', 'https://formspree.io/f/mnqyrayy');
   contactForm.setAttribute('method', 'POST');
 
   contact.appendChild(contactForm);
