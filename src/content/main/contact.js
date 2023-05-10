@@ -46,6 +46,7 @@ export default function contactPage() {
   );
 
   const listItem2 = document.createElement('li');
+  listItem2.setAttribute('class', 'listItem-button');
 
   const buttonSubmit = document.createElement('button');
   buttonSubmit.setAttribute('type', 'submit');
