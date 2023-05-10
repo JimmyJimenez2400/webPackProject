@@ -40,6 +40,44 @@ a {
   color: inherit;
 }
 
+button,
+label,
+input,
+select,
+progress,
+meter {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+}
+
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input,
+textarea,
+button {
+  width: 150px;
+}
+
+input {
+  appearance: none;
+}
+
+
+
+
 html,
 body {
   height: 100%;
@@ -228,3 +266,82 @@ body {
 
 
 /* Contact */
+
+#contactContainer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  overflow: scroll;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+}
+
+.contact h2 {
+  font-size: 4rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  background-color: var(--Dark-Shadow);
+  color: var(--White);
+  padding: 1em;
+}
+
+.contactForm ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.listItem {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+}
+
+.listItem label,
+.listItem input,
+.listItem textarea {
+  width: 100%;
+}
+
+.listItem textarea {
+  height: 150px;
+  overflow: auto;
+}
+
+.listItem-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
+
+.listItem-button button {
+  cursor: pointer;
+  height: 62px;
+  text-transform: uppercase;
+  border: 2px solid var(--Light-Orange);
+  font-weight: 900;
+  width: 200px;
+  color: var(--gold);
+  background-color: var(--Viridian);
+}
+
+.listItem-button button:hover {
+  background-color: var(--gold);
+  color: var(--Viridian);
+}
