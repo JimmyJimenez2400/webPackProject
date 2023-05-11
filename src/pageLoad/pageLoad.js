@@ -3,6 +3,7 @@ import navbar from '../content/header/navbar';
 import toggleHambugerMenu from '../helpful_functions/toggleHamburgerMenu';
 import aboutCompany from '../content/main/about';
 import hero from '../content/main/hero';
+import menu from '../content/main/menu';
 import contactPage from '../content/main/contact';
 
 export default function pageLoad() {
@@ -25,7 +26,7 @@ export default function pageLoad() {
   function mainBody() {
     const mainContainer = document.createElement('main');
     mainContainer.setAttribute('id', 'mainContainer');
-    mainContainer.appendChild(contactPage());
+    mainContainer.appendChild(menu());
     return mainContainer;
   }
 
