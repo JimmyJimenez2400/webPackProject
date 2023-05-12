@@ -24,6 +24,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 img {
@@ -91,14 +92,9 @@ body {
 #content {
   display: flex;
   flex-direction: column;
-
-  height: 100%;
-  width: 100%;
-  background-image: url("./images/backgroundPhoto.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("./images/backgroundPhoto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("./images/backgroundPhoto.jpg");
-
   background-position: center center;
 
 }
@@ -263,6 +259,63 @@ body {
 
 /* Menu */
 
+#menuContainer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: scroll;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu>* {
+  flex: 1;
+}
+
+.Drinks,
+.Appetizers,
+.Entrees,
+.Deserts {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.leftSide {
+  flex: 0 1 auto;
+  background-color: var(--Dark-Shadow);
+}
+
+.rightSide {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 52px;
+  flex: 2;
+  padding: 20px;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  height: 400px;
+  max-width: 200px;
+}
+
+.card>* {
+  flex: 1;
+}
 
 
 /* Contact */
