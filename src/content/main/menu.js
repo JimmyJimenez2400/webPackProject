@@ -1,4 +1,6 @@
 import { cardBuilder } from '../../../src/helpful_functions/menuSkeleton';
+import Aperivito from '../../../src/images/Aperivito.jpeg';
+import Negroni from '../../../src/images/Negroni.jpeg';
 
 export default function menu() {
   const menuContainer = document.createElement('section');
@@ -32,7 +34,8 @@ export default function menu() {
     cardBuilder(
       'Aperivito',
       '14.95',
-      'Aperitivo is known to be an excellent drink that prepares the digestive system before one sits down for a delicious Italian dinner.'
+      'Aperitivo is known to be an excellent drink that prepares the digestive system before one sits down for a delicious Italian dinner.',
+      `${Aperivito}`
     )
   );
 
@@ -40,7 +43,8 @@ export default function menu() {
     cardBuilder(
       'Negroni',
       '15.00',
-      'Negroni is made from one part of gin, one part of Campari, and one part of red Vermouth, and garnished with a slice of orange.'
+      'Negroni is made from one part of gin, one part of Campari, and one part of red Vermouth, and garnished with a slice of orange.',
+      `${Negroni}`
     )
   );
 
@@ -48,15 +52,8 @@ export default function menu() {
     cardBuilder(
       'Campari',
       '16.43',
-      'Campari is now a widely favourite drink in Italy and across the world. Made from a mixture of herbs, spices, fruits and alcohol, Gaspare Campari formulated the bitter recipe for the drink that later took over Italy and Europe by storm.'
-    )
-  );
-
-  rightSide1.appendChild(
-    cardBuilder(
-      'Americano',
-      '17.32',
-      'This famous Italian beverage is widely served with ice and a slice of lemon or orange'
+      'Campari is now a widely favourite drink in Italy and across the world. Made from a mixture of herbs, spices, fruits and alcohol.',
+      `${Aperivito}`
     )
   );
 
@@ -83,7 +80,8 @@ export default function menu() {
     cardBuilder(
       'Bruschetta',
       '25.00',
-      'Tomatoes | Garlic | Basil | Red Onion | Olive Oil | Balsamic Vinegar | Baguette | Salt and Pepper'
+      'Tomatoes | Garlic | Basil | Red Onion | Olive Oil | Balsamic Vinegar | Baguette | Salt and Pepper',
+      `${Negroni}`
     )
   );
 
@@ -91,12 +89,13 @@ export default function menu() {
     cardBuilder(
       'Eggplant Caponata',
       '25.00',
-      'Eggplant | Red Pepper | Garlic | Canned Tomatoes | Olive Oil'
+      'Eggplant | Red Pepper | Garlic | Canned Tomatoes | Olive Oil',
+      `${Aperivito}`
     )
   );
 
   rightSide2.appendChild(
-    cardBuilder('Baked Goat Cheese Dip', '20.00', 'Sauce | Bread')
+    cardBuilder('Baked Goat Cheese Dip', '20.00', 'Sauce | Bread', `${Negroni}`)
   );
 
   /* ============================== */
@@ -118,6 +117,31 @@ export default function menu() {
   section3.appendChild(leftSide3);
   section3.appendChild(rightSide3);
 
+  rightSide3.appendChild(
+    cardBuilder(
+      'Sun-Dried Tomato',
+      '12.40',
+      'Purpose Flour | Sugar | Dry Yeast | Warm Water | Extra-virgin Olive Oil',
+      `${Aperivito}`
+    )
+  );
+  rightSide3.appendChild(
+    cardBuilder(
+      'Beef Brasator',
+      '19.24',
+      'Boneless beef Shark | Dry Red Wine | Ground Pepper | Garlic',
+      `${Negroni}`
+    )
+  );
+  rightSide3.appendChild(
+    cardBuilder(
+      'Gorgonzola',
+      '23.33',
+      'Dry Yeast | Sugar | Warm Water',
+      `${Aperivito}`
+    )
+  );
+
   /* ============================= */
 
   const section4 = document.createElement('section');
@@ -136,6 +160,31 @@ export default function menu() {
 
   section4.appendChild(leftSide4);
   section4.appendChild(rightSide4);
+
+  rightSide4.appendChild(
+    cardBuilder(
+      'Strawberry Gelato',
+      '20.00',
+      'Cornstarch | Sugar | Strawberries',
+      `${Aperivito}`
+    )
+  );
+  rightSide4.appendChild(
+    cardBuilder(
+      'Mixed-Nut-Milk Panna Cotta',
+      '24.00',
+      'Powdered Gelatin | Nut Milk | Sugar | Honey',
+      `${Negroni}`
+    )
+  );
+  rightSide4.appendChild(
+    cardBuilder(
+      'Pumpkin-Gingersnap Tiramisu',
+      '43.00',
+      'Pumpkin | Sugar | Vanilla Extract | Cinnamon',
+      `${Aperivito}`
+    )
+  );
 
   menu.appendChild(section1);
   menu.appendChild(section2);
