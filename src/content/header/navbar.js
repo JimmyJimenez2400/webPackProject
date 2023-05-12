@@ -43,16 +43,16 @@ export default function navbar() {
 
   right_side.appendChild(unorderListContainer);
   unorderListContainer.appendChild(
-    liElementNavbar('HOME', 'liElement', 'userLink', '#')
+    liElementNavbar('HOME', 'liElement', 'userLink', '#', 'home')
   );
   unorderListContainer.appendChild(
-    liElementNavbar('ABOUT', 'liElement', 'userLink', '#')
+    liElementNavbar('ABOUT', 'liElement', 'userLink', '#', 'about')
   );
   unorderListContainer.appendChild(
-    liElementNavbar('MENU', 'liElement', 'userLink', '#')
+    liElementNavbar('MENU', 'liElement', 'userLink', '#', 'menu')
   );
   unorderListContainer.appendChild(
-    liElementNavbar('CONTACT', 'liElement', 'userLink', '#')
+    liElementNavbar('CONTACT', 'liElement', 'userLink', '#', 'contact')
   );
 
   return sectionContainer;
